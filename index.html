@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para Ti, Mi Amor - Muy Especial</title>
+  <link rel="stylesheet" href="Amor.css" />
+</head>
+<body>
+
+  <audio id="musica" autoplay loop>
+    <source src="musica.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="player" autoplay></audio>
+
+  <div id="corazones-container"></div>
+
+  <header>
+    <h1>Hola, mi amor 💖</h1>
+    <p>Esta página es para ti, para que recuerdes lo especial e importante que eres para mi.</p>
+    <button id="modo-noche-btn">🌙 Modo Noche</button>
+    <div id="reloj"></div>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('teamo')">Te amo</button>
+    <button onclick="mostrarSeccion('mal')">Cuando te sientas mal</button>
+    <button onclick="mostrarSeccion('especial')">Eres especial</button>
+    <button onclick="mostrarSeccion('poema')">Un poema para ti</button>
+    <button onclick="mostrarSeccion('mensajes')">Tus mensajes</button>
+    <button onclick="mostrarSeccion('juego')">Juega un rato</button>
+  </nav>
+
+  <main>
+    <section id="teamo" class="contenido">
+      <h2>Te amo por todo lo que eres 💕</h2>
+      <p>No te amo por cómo luces, aunque eres hermosa. Te amo por cómo me haces sentir, por cómo ríes, por cómo me miras. Me haces sentir que soy la persona más afortunada del mundo.</p>
+      <p>Tu ternura, tu forma de hablar, lo que sueñas... todo eso me enamora cada día más.</p>
+    </section>
+
+    <section id="mal" class="contenido oculto">
+      <h2>Cuando te sientas mal 🌧️</h2>
+      <p>Quiero que sepas que incluso en tus días más grises, tú sigues siendo luz para mí.</p>
+      <ul class="frases-suaves" id="frases-rotativas">
+        <!-- Frases que cambiarán por JS -->
+      </ul>
+    </section>
+
+   <section id="especial" class="contenido oculto">
+  <h2>Lo especial que eres 🌸</h2>
+  <p>Tu forma de ser, tu voz, tu presencia... hacen del mundo un lugar más bonito. No dejes que nada te haga dudar de tu valor.</p>
+  <div class="galeria">
+    <figure><img src="1.jpg" alt="Tu foto linda" /><figcaption>Tu risa es sol en la mañana,
+tu mirada, la paz que sana.
+Eres belleza sin final,
+mi universo emocional.</figcaption></figure>
+    <figure><img src="2.jpg" alt="Tu foto hermosa" /><figcaption>Tus ojos tienen la magia
+de un cielo en calma, sin prisa.
+Y en tu rostro, cada día,
+nace el arte de mi sonrisa.</figcaption></figure>
+    <figure><img src="3.jpg" alt="Tu foto feliz" /><figcaption>No hay flor que te supere,
+ni luna que te iguale.
+Tú eres lo que uno quiere,
+belleza que no se sale.</figcaption></figure>
+    <figure><img src="4.jpg" alt="Tu foto linda" /><figcaption>Eres más que un reflejo,
+eres fuego y ternura.
+Lo tuyo no es solo cuerpo,
+es alma pura y dulzura.</figcaption></figure>
+    <figure><img src="5.jpg" alt="Tu foto hermosa" /><figcaption>Tu forma de ver el mundo
+es más bella que tu piel.
+Y ya eso es decir tanto…
+porque tú eres todo bien.</figcaption></figure>
+    <figure><img src="6.jpg" alt="Tu foto feliz" /><figcaption>Eres poema sin rima,
+melodía sin final.
+Lo que en mi pecho se anima,
+mi razón más celestial.</figcaption></figure>
+    <figure><img src="7.jpg" alt="Tu foto linda" /><figcaption>Si el sol supiera tu nombre
+saldría solo a verte.
+Porque en ti hay tanta luz
+que hasta el día se convierte.</figcaption></figure>
+    <figure><img src="8.jpg" alt="Tu foto hermosa" /><figcaption>No hay espejo que te atrape,
+ni retrato que te encierre.
+Eres más que una imagen:
+eres amor que no muere.</figcaption></figure>
+    <figure><img src="9.jpg" alt="Tu foto feliz" /><figcaption>Tu belleza es como el viento:
+no se ve, pero se siente.
+Está en tu forma de amar
+y en tu corazón valiente.</figcaption></figure>
+    <figure><img src="10.jpg" alt="Tu foto feliz" /><figcaption>Las flores quieren ser tú,
+los suspiros, tus aliados.
+Porque tienes la virtud
+de dejarme enamorado.</figcaption></figure>
+    <figure><img src="11.jpg" alt="Tu foto feliz" /><figcaption>No hay estrella que te iguale,
+ni universo que compita.
+Tu belleza es tan real
+que en mi alma se repita.</figcaption></figure>
+    <figure><img src="12.jpg" alt="Tu foto feliz" /><figcaption>Me enamoran tus silencios,
+tu dulzura tan sincera.
+Porque tú, mi niña bella,
+eres todo lo que espera.</figcaption></figure>
+    <figure><img src="13.jpg" alt="Tu foto feliz" /><figcaption>Hasta el arte se sonroja
+cuando pasas tú cerquita.
+Y es que tú eres la joya
+que mi destino necesita.</figcaption></figure>
+    <figure><img src="15.jpg" alt="Tu foto feliz" /><figcaption>Tu sonrisa vale el mundo,
+tu mirada, mil canciones.
+Eres un poema profundo
+escrito en mis emociones.
+
+ </figcaption></figure>
+    <figure><img src="17.jpg" alt="Tu foto feliz" /><figcaption> Tu hermosura no está en ropa,
+ni en maquillaje, ni en poses.
+Está en cómo me tocas
+con tus gestos tan hermosos.</figcaption></figure>
+    <figure><img src="19.jpg" alt="Tu foto feliz" /><figcaption>Te amo mi niña ♥️💞</figcaption></figure>
+  </div>
+</section>
+
+
+    <section id="poema" class="contenido oculto">
+      <h2>Un poema solo para ti ✨</h2>
+      <p class="poema">
+        Eres el suspiro que calma mis días,<br/>
+        la luz que disuelve mis noches frías,<br/>
+        el abrazo que sana toda herida,<br/>
+        mi motivo, mi risa, mi alegría. 💫<br/><br/>
+
+        Si un día dudas de tu belleza,<br/>
+        recuerda que eres arte en esencia,<br/>
+        porque al verte, el mundo suspira,<br/>
+        y mi corazón... te admira. ❤️
+      </p>
+    </section>
+
+    <section id="mensajes" class="contenido oculto">
+      <h2>Escribe un mensaje para ti 💌</h2>
+      <form id="mensaje-form">
+        <input type="text" id="mensaje-input" placeholder="Escribe aquí..." maxlength="100" required />
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="mensajes-animados"></div>
+    </section>
+
+    <section id="juego" class="contenido oculto">
+      <h2>¡Juega un rato! 💖</h2>
+      <p>Haz clic en los corazones que caen para sumar puntos.</p>
+      <div id="juego-area"></div>
+      <p>Puntos: <span id="puntos">0</span></p>
+      <button id="reiniciar-juego">Reiniciar</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado con amor infinito para ti 🌷</p>
+  </footer>
+
+  <div id="popup-bienvenida" class="popup">
+    <div class="popup-contenido">
+      <h2>Bienvenida, hermosa 💖</h2>
+      <p>Greverly, recuerda que eres increíble y que siempre te amo.</p>
+      <button id="cerrar-popup">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="Amor.js"></script>
+</body>
+</html>
